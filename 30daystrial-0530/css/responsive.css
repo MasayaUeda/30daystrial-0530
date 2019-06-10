@@ -1,0 +1,157 @@
+/*PC → インナーの幅まで 1088px
+タブレット → インナーの幅からiPad（768px）まで
+スマホ → iPadより小さい（767px）からiPhone SE（320px）まで*/
+
+/*tablet & mobile*/
+@media screen and (max-width: 1088px){
+	/*header*/
+	#header{
+		height: 70px;
+	}
+	.header-logo{
+		margin:15px 0 15px 20px;
+	}
+	.header-nav{
+		display: none;
+	}
+	/*drawer*/
+	.hamburger-btn{
+		display: block;
+	}
+	/*mv*/
+	.mv-heading{
+		font-size: 40px;
+	}
+	.mv-lead{
+		font-size: 24px;
+	}
+	/*swiper*/
+	/*swiper-btn-custom*/
+	.swiper-button-prev,
+	.swiper-button-next {
+	  background-size: 40px 40px;
+	}
+	/*swiper-prev*/
+	.swiper-button-prev,
+	.swiper-container-rtl .swiper-button-next {
+	  left:10px;
+	}
+	/*swiper-next*/
+	.swiper-button-next,
+	.swiper-container-rtl .swiper-button-prev {
+	  right:10px;
+	}
+	/*news*/
+	.news-wrapper{
+		width: 80%;
+		margin:0 auto;
+	}
+	.news-row{
+		display: block;
+
+	}
+	.news-date{
+		margin-bottom: 5px;
+	}
+	.news-label{
+		display: inline-block;
+		margin-bottom: 5px;
+	}
+	.news-heading{
+		width: 100%;
+	}
+	/*price*/
+	.price-content {
+		display: block;
+	}
+	.price-img {
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	.price-table table{
+		width: 80%;
+		margin:0 auto;
+	}
+	.price-attention{
+		text-align:center;
+	}
+	/*contact*/
+	.form-inner input,.form-inner select,.form-inner textarea{
+		width: 100%;
+	}
+	.form{
+		width: 100%;
+		padding:20px 20px;
+	}
+	.input-row, .input-sort, .contact-content{
+		display: block;
+	}
+	.require:after{
+		position: absolute;
+		top: 20px;
+		left:130px;
+	}
+	/*modal*/
+	#modal-wrapper{
+		width: 100%;
+	}
+	#modal-batsu{
+		display: none;
+	}
+	/*faq*/
+	.faq-wrapper{
+		width: 100%;
+	}
+	.faq-answer{
+		height: 100%;
+	}
+	/*footer*/
+	.footer-row{
+		width: 100%;
+		display: block;
+		text-align:center;
+	}
+	.footer-logo{
+		margin-bottom: 40px;
+	}
+	.footer-logo p{
+		margin-bottom: 13px;
+	}
+	.footer-nav {
+		margin-bottom: 32px;
+	}
+	.sns-nav{
+		margin-bottom: 169px;
+	}
+}
+/*tablet*/
+@media screen and (max-width: 1088px) and (min-width: 767px){
+	/*card*/
+	.card-item{
+		margin-right: 20px;
+		width: calc(50% - 40px / 2);
+		height: 100%;
+	}
+	.card-item:nth-child(2n){
+		margin-right: 0px;
+	}
+	.card-item:nth-child(3){
+		margin-right: 20px;
+	}
+}
+/*mobile*/
+@media screen and (max-width: 766px) and (min-width: 375px){
+	/*card*/
+	.card-item{
+		width: 100%;
+		height: 100%;
+		margin-right: 0;
+	}
+	/*price*/
+	.price-table table{
+		width: 100%;
+	}
+}
+
+
+
